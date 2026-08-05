@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Menu -->
+    <div id="start-menu">
+        <h1>Global Countdown</h1>
+        <button id="register-btn">Register</button>
+        <button id="login-btn">Login</button>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="register-form" style="display:none;">
+        <h2>Create an Account</h2>
+        <input type="text" id="register-username" placeholder="Username" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button id="submit-register">Submit</button>
+        <button id="cancel-register">Cancel</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form" style="display:none;">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button id="submit-login">Submit</button>
+        <button id="cancel-login">Cancel</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-container" style="display: none;">
+        <h1>🌍 Global Countdown</h1>
+        <div id="countdown"></div>
+
+        <div id="location-info">
+            <p><strong>📍 Your Location:</strong> <span id="location"></span></p>
+            <p><strong>🌦️ Weather:</strong> <span id="weather"></span></p>
+            <p><strong>🕒 Current Time:</strong> <span id="clock"></span></p>
+        </div>
+
+        <!-- Leaderboard -->
+        <h3>Leaderboard For UnEmployed ones who can stay here without getting bored</h3>
+        <ul id="leaderboard">
+            <!-- Leaderboard items will appear here -->
+        </ul>
+
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
